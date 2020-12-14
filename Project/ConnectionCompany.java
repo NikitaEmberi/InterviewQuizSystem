@@ -26,7 +26,7 @@ public class ConnectionCompany {
     static{
         try{
             Class.forName("com.mysql.jdbc.Driver");
-        conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/interview_quiz","root","Nikita@123");
+        conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/interview_quiz","root","");
         st=conn.createStatement();
         getData=conn.prepareStatement("select * from company where name like ?");
         }
